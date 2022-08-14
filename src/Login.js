@@ -1,11 +1,11 @@
-import React from "react"
-import { useState, useEffect } from "react"
-import { login, logout, selectUser } from "./features/userSlice"
-import { auth } from "./Firebase"
-import "./Login.css"
+import { useState } from "react"
 import { useDispatch } from "react-redux"
 
-function Login() {
+import { login } from "./features/userSlice"
+import { auth } from "./Firebase"
+import "./Login.css"
+
+const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [name, setName] = useState("")
